@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, DesktopHeader } from "./styles";
 import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 

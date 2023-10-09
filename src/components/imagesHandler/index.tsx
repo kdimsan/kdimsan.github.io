@@ -1,12 +1,12 @@
+import React from "react";
 import { Container } from "./styles";
-import { FoodExplorerProps } from "../../docs/foodExplorer"
+import { AppDataProps } from "../../docs/foodExplorer";
 
 interface ImagesHandler {
-  data: FoodExplorerProps;
+  data: AppDataProps;
 }
 
 export function ImagesHandler({ data }: ImagesHandler) {
-
   const images = data.image.image_src.map((image, i) => {
     const description = data.image.image_description[i];
     return (
@@ -14,10 +14,8 @@ export function ImagesHandler({ data }: ImagesHandler) {
         <img src={image} alt="Project image" />
         <figcaption>{description}</figcaption>
       </figure>
-    )
+    );
   });
 
-  return(
-    <Container>{images}</Container>
-  )
+  return <Container>{images}</Container>;
 }
