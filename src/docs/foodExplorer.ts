@@ -17,9 +17,9 @@ export interface AppDataProps {
 
 export const foodexplorer_data: AppProps = {
   image_src: [
-    "src/assets/FoodExplorerImages/foodexplorer-login.gif",
-    "src/assets/FoodExplorerImages/foodexplorer-create.gif",
-    "src/assets/FoodExplorerImages/foodexplorer-edit.gif",
+    "/FoodExplorerImages/foodexplorer-login.gif",
+    "/FoodExplorerImages/foodexplorer-create.gif",
+    "/FoodExplorerImages/foodexplorer-edit.gif",
   ],
   image_description: ["Login", "Create product", "Edit product"],
   languages: [

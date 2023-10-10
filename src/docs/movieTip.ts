@@ -1,7 +1,7 @@
 import { AppDataProps, AppProps } from "./foodExplorer";
 
 const movieTipsData: AppProps = {
-  image_src: ["src/assets/MovieSelectorImages/filmSelector_gif.gif"],
+  image_src: ["/MovieSelectorImages/filmSelector_gif.gif"],
   image_description: ["Functionality"],
   languages: ["React", "TypeScript", "Styled-Components", "Axios"],
 };

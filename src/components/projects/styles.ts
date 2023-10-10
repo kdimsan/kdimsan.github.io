@@ -10,14 +10,22 @@ export const Content = styled.div`
     align-items: center;
     gap: 1.7rem;
 
-    margin: 1rem 1.5rem;
+    margin: 3rem 1.5rem;
 
     > li {
+      display: flex;
+      justify-content: center;
       list-style: none;
       flex-grow: 1;
-      flex-basis: 200;
+      flex-basis: 200px;
 
-      max-width: 35rem;
+      max-width: 25.8rem;
+    }
+  }
+
+  @media (min-width: 1199px) {
+    > ul {
+      justify-content: flex-start;
     }
   }
 `;
@@ -26,6 +34,7 @@ export const ProjectForm = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   margin-top: 1rem;
 

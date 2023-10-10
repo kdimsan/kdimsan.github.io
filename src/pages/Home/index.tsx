@@ -12,7 +12,13 @@ export function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["about", "projects", "contact"];
-      const scrollPosition = document.querySelector("main")!.scrollTop + 500;
+      let scrollPosition;
+
+      if (window.innerHeight > 1000) {
+        scrollPosition = document.querySelector("main")!.scrollTop + 650;
+      } else {
+        scrollPosition = document.querySelector("main")!.scrollTop + 500;
+      }
 
       for (const section of sections) {
         const element = document.getElementById(section);

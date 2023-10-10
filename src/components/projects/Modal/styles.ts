@@ -23,7 +23,7 @@ export const ModalContent = styled.div`
 
   width: 90%;
 
-  height: 100vh;
+  height: 95vh;
   max-height: 100vh;
   min-height: 60%;
 
