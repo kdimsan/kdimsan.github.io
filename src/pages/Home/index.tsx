@@ -8,47 +8,48 @@ import { Projects } from "../../components/projects";
 
 export function Home() {
   const [activeSection, setActiveSection] = useState<string | null>(null);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["about", "projects", "contact"];
-      let scrollPosition;
+      const scrollPosition = window.scrollY + 600;
+      const currentScrollPosition = window.scrollY;
 
-      if (window.innerHeight > 1000) {
-        scrollPosition = document.querySelector("main")!.scrollTop + 650;
+      if (prevScrollPos < currentScrollPosition && window.innerWidth < 1024) {
+        document.querySelector(".header")?.classList.add("hidden");
       } else {
-        scrollPosition = document.querySelector("main")!.scrollTop + 500;
+        document.querySelector(".header")?.classList.remove("hidden");
       }
+
+      setPrevScrollPos(currentScrollPosition);
 
       for (const section of sections) {
         const element = document.getElementById(section);
+
         if (element) {
           const offset = element.offsetTop;
 
-          if (scrollPosition >= offset) {
+          if (scrollPosition > offset) {
             setActiveSection(section);
           }
         }
       }
     };
 
-    document.querySelector("main")!.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      document
-        .querySelector("main")!
-        .removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [prevScrollPos]);
 
   return (
     <Container>
       <Header activeSection={activeSection} />
-      <main>
+      <main id="main">
         <About
-          className={`${
-            activeSection === "about" ? "active" : ""
-          } background-test`}
+          className={activeSection === "about" ? "active" : ""}
           id="about"
         />
 

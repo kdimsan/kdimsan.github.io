@@ -1,74 +1,30 @@
 import React from "react";
-import {
-  Container,
-  DevelopmentSkillsContent,
-  Knowledge,
-  SkillsContainer,
-} from "./styles";
+import { Container } from "./styles";
 import { SectionProps } from "../projects";
-import { DiHtml5, DiNodejsSmall, DiReact, DiCss3 } from "react-icons/di";
-import { TbBrandTypescript, TbBrandJavascript } from "react-icons/tb";
+
+import Spacer from "../spacer";
+import SkillsSection from "./skillsSection";
 
 export function About({ id, className }: SectionProps) {
   return (
     <Container className={className} id={id}>
-      <h2>About</h2>
+      <Spacer />
+      <h2>About me</h2>
       <p>
-        I have always been connected with computers, and decided since young
-        that would work with it. But my "first love" was with hardware, so I
-        started a graduation in computer engineering at UERJ in 2017. However,
-        overtime I noticed that developing softwares were what I really enjoy.
+        I have always been connected with computers, and decided since a young
+        age that I would work with them. But my "first love" was hardware, so I
+        started a degree in computer engineering at UERJ, Rio de Janeiro, in
+        2017. However, over time I noticed that developing software was what I
+        really enjoyed. So in 2019, I dropped computer engineering and started
+        studying Data Analysis at University Estácio de Sá. Fast forward about 3
+        years, I discovered frontend development through some friends, and in
+        the final third of 2022 during my graduation, I decided to pursue a
+        career in it. In 2023, I worked as a freelancer for a car wash company,
+        where I developed a custom application for the company with the aim of
+        streamlining and speeding up the registration and service process.
       </p>
-
-      <SkillsContainer>
-        <h3>Skills</h3>
-        <DevelopmentSkillsContent>
-          <h4>Development</h4>
-          <ul>
-            <li className="react">
-              <DiReact />
-            </li>
-            <li className="typescript">
-              <TbBrandTypescript />
-            </li>
-            <li className="javascript">
-              <TbBrandJavascript />
-            </li>
-            <li className="css">
-              <DiCss3 />
-            </li>
-            <li className="html5">
-              <DiHtml5 />
-            </li>
-            <li className="nodejs">
-              <DiNodejsSmall />
-            </li>
-          </ul>
-        </DevelopmentSkillsContent>
-        <Knowledge>
-          <h4>Knowledge</h4>
-          <ul>
-            <li>
-              <span>Git & Github</span>
-            </li>
-            <li>
-              <span>Axios</span>
-            </li>
-            <li>
-              <span>Express</span>
-            </li>
-            <li>
-              <span>SQLite</span>
-            </li>
-            <li>
-              <span>SASS</span>
-            </li>
-            <li>
-              <span>Styled-Components</span>
-            </li>
-          </ul>
-        </Knowledge>
-      </SkillsContainer>
+      <h3>Skills</h3>
+      <SkillsSection />
     </Container>
   );
 }

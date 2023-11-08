@@ -210,6 +210,7 @@ export const LanguagesContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   gap: 6px 1rem;
+
   margin: 2rem 0;
 
   > div {

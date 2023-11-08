@@ -1,11 +1,12 @@
 export default {
   COLORS: {
-    BG_PRIMARY: "linear-gradient(45deg, #7E4D96, #5E018C, #2E1C37 )",
-    BG_SKILLS: "linear-gradient(135deg, #9d1cdd, #62136b 80%)",
-    BG_PROJECTS: "linear-gradient(0deg, #19021c 0%, #62136b 100%)",
-    SHADOW_DARK: "#230727",
-    SHADOW_LIGHT: "#9d1cdd",
-    PRIMARY_BORDER: "#1d0421",
+    BG_PRIMARY: "linear-gradient(145deg, #01001c 10%, #0C036D 100%)",
+    BG_HEADER: "linear-gradient(145deg, #01001c 0%, #000052 100%)",
+    BG_SKILLS: "linear-gradient(135deg, #180CA3, #010048 80%)",
+    BG_PROJECTS: "linear-gradient(0deg, #0000FF 0%, #02003a 80%)",
+    SHADOW_DARK: "#0C036D",
+    SHADOW_LIGHT: "#0000FF",
+    PRIMARY_BORDER: "#0000FF",
     LIGHT_900: "rgba(255, 255, 255, 0.87)",
   },
   FONT_SIZE: {

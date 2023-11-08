@@ -4,37 +4,19 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
   width: 100%;
-  max-width: 100%;
 
-  padding: 5rem 2rem;
-
-  @media (min-width: 1024px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10%;
-
-    padding: 5rem 8rem;
-  }
+  padding: 2rem;
 
   > main {
-    @media (min-width: 1024px) {
-      max-width: 60rem;
-      overflow-x: auto;
-
-      margin: 5rem 0;
-    }
+    flex: 1;
 
     > div {
-      min-height: 50rem;
-
-      margin-top: 5rem;
+      min-height: 90vh;
 
       position: relative;
 
-      border-top: 2px solid #fff;
-      border-bottom: 2px solid #fff;
+      border-bottom: 3px solid #fff;
       border-radius: 30px;
 
       padding: 1rem;
@@ -42,8 +24,12 @@ export const Container = styled.div`
       > h2 {
         font-size: ${({ theme }) => theme.FONT_SIZE.FS_4L};
 
-        margin: 0 0 2rem 1rem;
+        margin: 1rem 0 1.5rem 1rem;
       }
     }
+  }
+
+  @media (min-width: 1024px) {
+    padding: 2rem 10rem;
   }
 `;

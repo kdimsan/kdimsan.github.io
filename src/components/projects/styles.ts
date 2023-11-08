@@ -10,16 +10,16 @@ export const Content = styled.div`
     align-items: center;
     gap: 1.7rem;
 
-    margin: 3rem 1.5rem;
+    margin: 1rem 2rem;
 
     > li {
       display: flex;
       justify-content: center;
       list-style: none;
       flex-grow: 1;
-      flex-basis: 200px;
+      flex-basis: 250px;
 
-      max-width: 25.8rem;
+      max-width: 30rem;
     }
   }
 
@@ -36,8 +36,6 @@ export const ProjectForm = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-top: 1rem;
-
   border: 3px solid ${({ theme }) => theme.COLORS.PRIMARY_BORDER};
   border-radius: 5px;
 
@@ -52,7 +50,8 @@ export const ProjectForm = styled.div`
 
   > img {
     width: 100%;
-    height: 11rem;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
   }
 
   > span {
