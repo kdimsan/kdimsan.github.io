@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   margin: 0 2rem;
   span {
-    font-size: 14px;
+    font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
     text-align: justify;
     > a {
       text-decoration: none;
@@ -16,6 +16,7 @@ const Container = styled.div`
 
   @media (min-width: 1024px) {
     span {
+      font-size: ${({ theme }) => theme.FONT_SIZE.FS_L};
       > a {
         filter: none;
         &:hover {
@@ -25,6 +26,7 @@ const Container = styled.div`
     }
   }
 `;
+
 export default function ContactContent() {
   return (
     <Container>

@@ -4,6 +4,7 @@ import { Container, Content } from "./styles";
 
 import Spacer from "../spacer";
 import ProjectsContainer from "./projectsContainer";
+import Title from "../title";
 
 export interface SectionProps {
   id: string;
@@ -14,7 +15,7 @@ export function Projects({ id, className }: SectionProps) {
   return (
     <Container className={className} id={id}>
       <Spacer />
-      <h2>Projects</h2>
+      <Title title="Projects" fontSize="3rem" />
       <Content>
         <ProjectsContainer />
       </Content>

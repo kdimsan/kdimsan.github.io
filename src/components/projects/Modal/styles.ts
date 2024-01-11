@@ -31,7 +31,7 @@ export const ModalContent = styled.div`
 
   padding: 6rem 4rem;
 
-  background: ${({ theme }) => theme.COLORS.BG_PRIMARY};
+  background: ${({ theme }) => theme.COLORS.BG_MODAL};
   border-radius: 10px;
 
   opacity: 0;

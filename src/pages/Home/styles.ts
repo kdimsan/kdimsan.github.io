@@ -20,12 +20,6 @@ export const Container = styled.div`
       border-radius: 30px;
 
       padding: 1rem;
-
-      > h2 {
-        font-size: ${({ theme }) => theme.FONT_SIZE.FS_4L};
-
-        margin: 1rem 0 1.5rem 1rem;
-      }
     }
   }
 

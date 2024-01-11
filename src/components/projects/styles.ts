@@ -60,7 +60,7 @@ export const ProjectForm = styled.div`
     display: flex;
     justify-content: center;
 
-    font-size: 1.5rem;
+    font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
     font-weight: 500;
 
     background: ${({ theme }) => theme.COLORS.BG_PROJECTS};
