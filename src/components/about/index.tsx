@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./styles";
+
 import { SectionProps } from "../projects";
 
 import Spacer from "../spacer";
@@ -13,6 +13,7 @@ const Paragraph = styled.p`
 
   text-align: justify;
 `;
+const Container = styled.div``;
 
 export function About({ id, className }: SectionProps) {
   return (

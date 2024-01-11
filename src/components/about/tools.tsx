@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import { FiTool } from "react-icons/fi";
+import { Tools } from "../../docs/toolsList";
 
 const Container = styled.div`
   margin: 1rem 0 2rem;
@@ -56,30 +57,18 @@ const Container = styled.div`
 `;
 
 export default function ToolsContent() {
+  const tools = Tools;
   return (
     <Container>
       <h4>
         Tools <FiTool />
       </h4>
       <ul>
-        <li>
-          <span>Git & Github</span>
-        </li>
-        <li>
-          <span>Axios</span>
-        </li>
-        <li>
-          <span>Express</span>
-        </li>
-        <li>
-          <span>SQLite</span>
-        </li>
-        <li>
-          <span>SASS</span>
-        </li>
-        <li>
-          <span>Styled-Components</span>
-        </li>
+        {tools.map((tool, index) => (
+          <li key={index}>
+            <span>{tool}</span>
+          </li>
+        ))}
       </ul>
     </Container>
   );
