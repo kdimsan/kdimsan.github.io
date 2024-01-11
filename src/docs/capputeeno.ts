@@ -1,6 +1,6 @@
-import { AppDataProps, AppProps } from "./foodExplorer";
+import { AppDataProps, AppInfoProps } from "./appsProps";
 
-const capputeenoImages: AppProps = {
+const capputeenoImages: AppInfoProps = {
   image_src: ["/CapputeenoImages/capputeeno.gif"],
   image_description: ["Funcionality"],
   languages: ["React", "TypeScript", "Styled-Components", "Axios", "NextJS"],
@@ -10,7 +10,7 @@ export const capputeenoObject: AppDataProps = {
   title: "Capputeeno",
   admin: false,
   description:
-    "This app is a fork from Rocketseat frontend challenge. Its made with Next.js and Typescript, styles with styled-components and consums its own API GraphQL. To run it, you have to first start the api by 'npm start'. The app has functionalities like filters by product type, price high-low, price low-high, best sellers and news. The shopping cart is allocated at the localstorage. This app was made for practicing porposes, and by now its not at the final version.",
+    "​This application is a marketplace designed by Rocketseat. The project is an e-commerce platform for selling mugs and T-shirts, featuring the following functionalities: product filtering by category, searching by product name, and adding/removing products from the cart. The project design is available on Figma and was developed using Next.js and TypeScript, styled with styled-components. The cart is managed via localStorage and consumes its own GraphQL API. To start the project, run 'npm start' in the 'api' folder and 'npm run dev' in the 'capputeeno' folder.",
   image: capputeenoImages,
   languages: capputeenoImages,
   online: false,

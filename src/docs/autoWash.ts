@@ -1,6 +1,6 @@
-import { AppDataProps, AppProps } from "./foodExplorer";
+import { AppDataProps, AppInfoProps } from "./appsProps";
 
-const autoWashImages: AppProps = {
+const autoWashImages: AppInfoProps = {
   image_src: [
     "/AutoWashImages/auto-wash.gif",
     "/AutoWashImages/auto-wash-mobile.gif",

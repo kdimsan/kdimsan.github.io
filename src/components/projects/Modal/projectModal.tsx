@@ -1,38 +1,42 @@
-import React, { useState } from "react";
-import {
-  Container,
-  ModalContent,
-  ModalText,
-  ModalImage,
-  LanguagesContainer,
-} from "./styles";
-import { FaGithub } from "react-icons/fa";
+import React, { useRef, useState } from "react";
+import { Container, ModalContent, ModalText, ModalImage } from "./styles";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-import { AppDataProps } from "../../../docs/foodExplorer";
 import { ImagesHandler } from "../../imagesHandler";
+import { AppDataProps } from "../../../docs/appsProps";
 
-export interface ModalProps {
+import useOutsideClick from "../../../hooks/useOutsideElementClick";
+import ProjectOnline from "./projectOnline";
+import ProjectTitle from "./projectTitle";
+import ProjectDescription from "./projectDescription";
+import ProjectAdminFn from "./projectAdminFn";
+import ProjectLanguages from "./projectLanguages";
+import ProjectRepository from "./projectRepository";
+
+interface ModalProps {
   isOpen: boolean;
-  setModalClose: () => void;
   data: AppDataProps;
+  handleClose: () => void;
 }
 
 export default function ProjectModal({
   isOpen,
-  setModalClose,
   data,
+  handleClose,
 }: ModalProps) {
   const [fadeOut, setFadeOut] = useState(false);
 
-  const handlemodal = setModalClose;
+  const divRef = useRef<HTMLDivElement>(null);
 
   const handleFade = () => {
     setFadeOut(true);
     setTimeout(() => {
-      handlemodal();
+      isOpen = false;
+      handleClose();
     }, 500);
   };
+
+  useOutsideClick(divRef, handleFade);
 
   if (isOpen) {
     return (
@@ -41,48 +45,17 @@ export default function ProjectModal({
           className={fadeOut ? "fadeout" : ""}
           onAnimationEnd={() => setFadeOut(false)}
         >
-          <div>
+          <div ref={divRef}>
             <ModalImage>
               <ImagesHandler data={data} />
             </ModalImage>
             <ModalText>
-              <h2>{data.title}</h2>
-              <p>{data.description}</p>
-
-              {data.online ? (
-                <p>
-                  This webpage is online{" "}
-                  <a className="underline" href={data.link}>
-                    here
-                  </a>
-                </p>
-              ) : (
-                <p>
-                  This page is not available online, but fell free to git clone
-                  it. All you need to do after is run the commands "npm install"
-                  and "npm run dev".
-                </p>
-              )}
-
-              {data.admin && (
-                <span>
-                  Fell free to create an account using a fake email address or
-                  using admin account, email: admin@email.com / password: 123 .
-                  If the application does not show any product, please wait and
-                  refresh the page.
-                </span>
-              )}
-              <LanguagesContainer>
-                {data.languages.languages.map((language, index) => (
-                  <div>
-                    <span id={index.toString()}>{language}</span>
-                  </div>
-                ))}
-              </LanguagesContainer>
-              <button>
-                <FaGithub />
-                <a href={data.repository}>Repository</a>
-              </button>
+              <ProjectTitle title={data.title} />
+              <ProjectDescription description={data.description} />
+              <ProjectOnline isOnline={data.online} link={data.link} />
+              <ProjectAdminFn isAdminFn={data.admin} />
+              <ProjectLanguages languages={data.languages.languages} />
+              <ProjectRepository repository={data.repository} />
             </ModalText>
           </div>
           <button onClick={handleFade}>
@@ -92,6 +65,5 @@ export default function ProjectModal({
       </Container>
     );
   }
-
   return null;
 }

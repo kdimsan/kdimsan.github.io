@@ -5,6 +5,7 @@ import { Container, Content } from "./styles";
 import Spacer from "../spacer";
 import ProjectsContainer from "./projectsContainer";
 import Title from "../title";
+import Disclaimer from "./disclaimer";
 
 export interface SectionProps {
   id: string;
@@ -18,6 +19,7 @@ export function Projects({ id, className }: SectionProps) {
       <Title title="Projects" fontSize="3rem" />
       <Content>
         <ProjectsContainer />
+        <Disclaimer />
       </Content>
     </Container>
   );

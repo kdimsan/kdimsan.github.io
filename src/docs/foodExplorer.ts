@@ -1,21 +1,6 @@
-export interface AppProps {
-  image_src: string[];
-  image_description: string[];
-  languages: string[];
-}
+import { AppDataProps, AppInfoProps } from "./appsProps";
 
-export interface AppDataProps {
-  title: string;
-  description: string;
-  online: boolean;
-  link?: string;
-  repository: string;
-  admin: boolean;
-  image: AppProps;
-  languages: AppProps;
-}
-
-export const foodexplorer_data: AppProps = {
+export const foodexplorer_data: AppInfoProps = {
   image_src: [
     "/FoodExplorerImages/foodexplorer-login.gif",
     "/FoodExplorerImages/foodexplorer-create.gif",
@@ -36,7 +21,7 @@ export const foodexplorer_data: AppProps = {
 export const foodExplorerObject: AppDataProps = {
   title: "Food Explorer",
   description:
-    "Webpage created for the Rocketseat Explorer course. This is the final project, wich the development of its own database, done with Knex.js, the back-end using Javascript, Express and SQLite. Frontend was developed with ReactJS and the connection to the API is done using Axios. The application features functionalities such as user registration, user login, validation token, product registration, and displaying products stored in the database by category.",
+    "This application was developed as the final challenge in Rocketseat's Explorer course. It underwent full development, with the backend built using JavaScript, Express, and SQL, while the frontend was crafted with React and JavaScript. Additionally, it established a connection to its own API using Axios. The application includes user registration and login functionality, along with an 'admin' feature that enables the creation and editing of dishes.",
   online: true,
   link: "https://ricardoadamefoodexplorer.netlify.app",
   repository: "https://github.com/kdimsan/front-end-FoodExplorer",
