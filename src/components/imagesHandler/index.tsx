@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./styles";
-import { AppDataProps } from "../../docs/foodExplorer";
+import { AppDataProps } from "../../docs/appsProps";
 
 interface ImagesHandler {
   data: AppDataProps;
