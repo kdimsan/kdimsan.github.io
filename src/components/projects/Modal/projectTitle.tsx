@@ -6,12 +6,14 @@ type ProjectTitleProps = {
 };
 
 const TitleConfig = styled.h2`
-  font-size: 2.2rem;
+  font-size: ${({ theme }) => theme.FONT_SIZE.FS_2L};
+  font-family: ${({ theme }) => theme.FONT_FAMILY.NEUTRAL_BOLD};
+  letter-spacing: 1.5px;
   margin: 2rem 0 0;
   align-self: center;
 
   @media (min-width: 1024px) {
-    font-size: 3rem;
+    font-size: ${({ theme }) => theme.FONT_SIZE.FS_4L};
   }
 `;
 

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { HeaderNavigationProps } from ".";
 import HeaderLinks from "./headerLinks";
+import { sections } from "../../docs/sections";
 
 const Container = styled.nav`
   display: flex;
@@ -20,6 +21,7 @@ const Container = styled.nav`
 
     > li {
       font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
+      font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
       font-weight: 500;
       transition: filter 0.2s ease-in-out;
 
@@ -99,42 +101,24 @@ const Container = styled.nav`
 export default function HeaderNavigation({
   activeSection,
 }: HeaderNavigationProps) {
+  const section = sections;
+
   return (
     <Container>
       <ul>
-        <li>
-          <a href="#about">
-            <span
-              className={`underline ${
-                activeSection === "about" ? "active" : ""
-              }`}
-            >
-              About
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#projects">
-            <span
-              className={`underline ${
-                activeSection === "projects" ? "active" : ""
-              }`}
-            >
-              Projects
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <span
-              className={`underline ${
-                activeSection === "contact" ? "active" : ""
-              }`}
-            >
-              Contact
-            </span>
-          </a>
-        </li>
+        {section.map((section, index) => (
+          <li key={index}>
+            <a href={`#${section}`}>
+              <span
+                className={`underline ${
+                  activeSection === section ? "active" : ""
+                }`}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </span>
+            </a>
+          </li>
+        ))}
       </ul>
       <HeaderLinks />
     </Container>

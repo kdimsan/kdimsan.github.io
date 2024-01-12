@@ -13,7 +13,8 @@ const Container = styled.button`
 
   padding: 5px 0;
 
-  font-size: 1.5rem;
+  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
+  font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
 
   transition: all 0.3s;
 
@@ -33,7 +34,7 @@ const Container = styled.button`
   }
 
   @media (min-width: 1024px) {
-    font-size: 1.7rem;
+    font-size: ${({ theme }) => theme.FONT_SIZE.FS_L};
   }
 `;
 
