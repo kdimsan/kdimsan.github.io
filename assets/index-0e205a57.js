@@ -256,7 +256,7 @@ Error generating stack: `+o.message+`
 
     > h2 {
       font-family: ${({theme:e})=>e.FONT_FAMILY.WILD_WORLD};
-      font-size: ${({theme:e})=>e.FONT_SIZE.FS_L};
+      font-size: ${({theme:e})=>e.FONT_SIZE.FS_M};
     }
   }
 `;function Z1(){return g.jsxs(K1,{children:[g.jsx("span",{children:"Hello, I'm"}),g.jsx("h1",{children:"RICARDO ADAME SANT'ANA"}),g.jsx("h2",{children:"FULLSTACK DEVELOPER"})]})}function X1({activeSection:e}){return g.jsx(A1,{children:g.jsxs("div",{className:"header",children:[g.jsx(Z1,{}),g.jsx(Y1,{activeSection:e})]})})}const J1=$.div`
