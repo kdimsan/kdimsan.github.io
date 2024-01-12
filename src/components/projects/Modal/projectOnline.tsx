@@ -7,7 +7,8 @@ type ProjectOnlineProps = {
 };
 
 const Paragraph = styled.p`
-  font-size: 1.5rem;
+  font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
+  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
   text-align: justify;
 
   margin: 1rem 0;
@@ -24,7 +25,7 @@ const Paragraph = styled.p`
   }
 
   @media (min-width: 1024px) {
-    font-size: 1.7rem;
+    font-size: ${({ theme }) => theme.FONT_SIZE.FS_L};
   }
 `;
 

@@ -12,11 +12,12 @@ const SpanAdmin = styled.span`
 
   margin: 1rem 0;
 
-  font-size: 1.5rem;
+  font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
+  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
   text-align: justify;
 
   @media (min-width: 1024px) {
-    font-size: 1.7rem;
+    font-size: ${({ theme }) => theme.FONT_SIZE.FS_L};
   }
 `;
 

@@ -44,6 +44,28 @@ export default createGlobalStyle`
         border: none;
     }
 
+    @font-face {
+        font-family: "Modernist";
+        src: url('/fonts/Sk-Modernist-Regular.otf') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Neutral-Face-Bold";
+        src: url('/fonts/NeutralFace-Bold.otf') format('opentype');
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Wild-World";
+        src: url('/fonts/WILD-WORLD.otf') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+
     @keyframes background-movement {
         0% {
             background-position: 0% 0%;

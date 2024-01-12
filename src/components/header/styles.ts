@@ -23,34 +23,6 @@ export const Container = styled.header`
     z-index: 1;
 
     transition: all 0.3s ease;
-
-    > .apresentation {
-      > span {
-        font-size: ${({ theme }) => theme.FONT_SIZE.FS_XS};
-      }
-      > h1 {
-        font-size: ${({ theme }) => theme.FONT_SIZE.FS_3L};
-        white-space: nowrap;
-        line-height: 30px;
-      }
-      > h2 {
-        font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
-      }
-
-      @media (min-width: 1024px) {
-        span {
-          font-size: ${({ theme }) => theme.FONT_SIZE.FS_S};
-        }
-        > h1 {
-          font-size: ${({ theme }) => theme.FONT_SIZE.FS_4L};
-          white-space: nowrap;
-        }
-
-        > h2 {
-          font-size: ${({ theme }) => theme.FONT_SIZE.FS_2L};
-        }
-      }
-    }
   }
 
   @media (min-width: 1024px) {

@@ -4,9 +4,8 @@ export default {
     BG_MODAL: "linear-gradient(135deg, #050505 30%, #454545 100%)",
     BG_HEADER: "linear-gradient(135deg, #050505 60%, #454545 100%)",
     BG_SKILLS: "linear-gradient(135deg, #050505 60%, #454545 100%)",
-    //BG_SKILLS: "linear-gradient(135deg, #180CA3, #010048 80%)",
     BG_PROJECTS: "linear-gradient(0deg, #050505 30%, #454545 100%)",
-    //BG_PROJECTS: "linear-gradient(0deg, #0000FF 0%, #02003a 80%)",
+
     SHADOW_DARK: "#000",
     SHADOW_LIGHT: "#454545",
     PRIMARY_BORDER: "#050505",
@@ -22,5 +21,10 @@ export default {
     FS_5L: "2.8rem",
     FS_6L: "3.2rem",
     FS_7L: "4rem",
+  },
+  FONT_FAMILY: {
+    MODERNIST: "Modernist, sans-serif",
+    WILD_WORLD: "Wild-world, sans-serif",
+    NEUTRAL_BOLD: "Neutral-Face-Bold, sans-serif",
   },
 };

@@ -8,7 +8,8 @@ import Title from "../title";
 import styled from "styled-components";
 
 const Paragraph = styled.p`
-  font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
+  font-size: ${({ theme }) => theme.FONT_SIZE.FS_L};
+  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
   margin: 0 2rem 3rem;
 
   text-align: justify;

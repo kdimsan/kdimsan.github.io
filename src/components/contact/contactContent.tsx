@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   margin: 0 2rem;
+  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
   span {
     font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
     text-align: justify;
