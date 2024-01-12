@@ -28,11 +28,7 @@ const Container = styled.div`
 
     > h2 {
       font-family: ${({ theme }) => theme.FONT_FAMILY.WILD_WORLD};
-<<<<<<< HEAD
       font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
-=======
-      font-size: ${({ theme }) => theme.FONT_SIZE.FS_L};
->>>>>>> e719e2507487c6fe1bde02b747ef24fe0ef9b09e
     }
   }
 `;
