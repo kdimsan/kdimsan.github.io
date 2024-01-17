@@ -4,7 +4,8 @@ import styled from "styled-components";
 const Container = styled.p`
   font-size: ${({ theme }) => theme.FONT_SIZE.FS_S};
   font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
-  margin-top: 2rem;
+  margin: 2rem 0;
+  letter-spacing: 0.5px;
 `;
 export default function Disclaimer() {
   return (

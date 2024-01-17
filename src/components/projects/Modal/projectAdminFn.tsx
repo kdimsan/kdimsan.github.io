@@ -26,10 +26,10 @@ export default function ProjectAdminFn({ isAdminFn }: ProjectAdminFnProps) {
     <div>
       {isAdminFn && (
         <SpanAdmin>
-          Fell free to create an account using a fake email address or using
-          admin account, email: admin@email.com / password: 123 . If the
-          application does not show any product, please wait and refresh the
-          page.
+          Fell free to create an account using a fake email address or using an
+          user to test funcionalities, by email: tester@tester.com / password:
+          123 . If the application is slow to register/login, please wait a
+          minute and try again.
         </SpanAdmin>
       )}
     </div>

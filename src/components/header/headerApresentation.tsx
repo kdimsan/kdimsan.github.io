@@ -7,7 +7,7 @@ const Container = styled.div`
   }
   > h1 {
     font-family: ${({ theme }) => theme.FONT_FAMILY.WILD_WORLD};
-    font-size: ${({ theme }) => theme.FONT_SIZE.FS_2L};
+    font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
     white-space: nowrap;
     line-height: 30px;
     letter-spacing: 1px;

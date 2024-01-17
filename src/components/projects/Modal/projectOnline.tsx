@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { FaGlobe } from "react-icons/fa";
 
 type ProjectOnlineProps = {
   isOnline: boolean;
@@ -18,6 +19,10 @@ const Paragraph = styled.p`
     color: ${({ theme }) => theme.COLORS.LIGHT_900};
     transition: filter 0.3s;
 
+    > svg {
+      margin: 0 2px 0 3px;
+    }
+
     &:hover {
       filter: drop-shadow(0 0 2px #fff);
       outline: none;
@@ -35,7 +40,8 @@ export default function ProjectOnline({ isOnline, link }: ProjectOnlineProps) {
       {isOnline ? (
         <Paragraph>
           This webpage is online{" "}
-          <a className="underline" href={link}>
+          <a className="underline" target="_blank" href={link}>
+            <FaGlobe />
             here
           </a>
         </Paragraph>

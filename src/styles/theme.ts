@@ -1,8 +1,8 @@
 export default {
   COLORS: {
-    BG_PRIMARY: "linear-gradient(135deg, #050505 10%, #454545 100%)",
-    BG_MODAL: "linear-gradient(135deg, #050505 30%, #454545 100%)",
-    BG_HEADER: "linear-gradient(135deg, #050505 60%, #454545 100%)",
+    BG_PRIMARY: "linear-gradient(135deg, #090909 10%, #343434 100%)",
+    BG_MODAL: "linear-gradient(145deg, #090909 50%, #343434 100%)",
+    BG_HEADER: "linear-gradient(135deg, #050505 60%, #343434 100%)",
     BG_SKILLS: "linear-gradient(135deg, #050505 60%, #454545 100%)",
     BG_PROJECTS: "linear-gradient(0deg, #050505 30%, #454545 100%)",
 
@@ -10,6 +10,7 @@ export default {
     SHADOW_LIGHT: "#454545",
     PRIMARY_BORDER: "#050505",
     LIGHT_900: "rgba(255, 255, 255, 0.87)",
+    SILVER: "#B9B9B9",
   },
   FONT_SIZE: {
     FS_S: "1.2rem",

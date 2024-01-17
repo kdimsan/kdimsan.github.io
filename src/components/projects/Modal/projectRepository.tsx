@@ -26,11 +26,13 @@ const Container = styled.button`
   > svg {
     width: 2rem;
     height: 2rem;
+    color: #fff;
   }
 
   > a {
     text-decoration: none;
     color: ${({ theme }) => theme.COLORS.LIGHT_900};
+    letter-spacing: 0.7px;
   }
 
   @media (min-width: 1024px) {
@@ -44,7 +46,9 @@ export default function ProjectRepository({
   return (
     <Container>
       <FaGithub />
-      <a href={repository}>Repository</a>
+      <a target="_blank" href={repository}>
+        Repository
+      </a>
     </Container>
   );
 }

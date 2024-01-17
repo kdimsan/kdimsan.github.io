@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaRegEnvelope,
+  FaFileDownload,
+} from "react-icons/fa";
+import { handleDownload } from "../../docs/handleDownload";
 
 const Container = styled.div`
   display: flex;
@@ -15,16 +21,16 @@ const Container = styled.div`
     gap: 1rem;
 
     > li {
-      > a {
-        > svg {
-          width: 1.5rem;
-          height: 1.5rem;
-          color: #eee;
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: #eee;
 
-          &:hover {
-            filter: drop-shadow(0 0 3px #aaa);
-            transform: translate(-1px, -1px);
-          }
+        transition: all 0.3s ease;
+
+        &:hover {
+          filter: drop-shadow(0 0 3px #fff);
+          transform: translate(-2px, -2px);
         }
       }
     }
@@ -56,9 +62,14 @@ export default function HeaderLinks() {
           </a>
         </li>
         <li>
-          <a href="mailto:ricardo.adame.santana@gmail.com">
+          <a target="_blank" href="mailto:ricardo.adame.santana@gmail.com">
             <FaRegEnvelope />
           </a>
+        </li>
+        <li>
+          <button onClick={handleDownload}>
+            <FaFileDownload />
+          </button>
         </li>
       </ul>
     </Container>

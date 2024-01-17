@@ -10,7 +10,7 @@ export const Content = styled.div`
     align-items: center;
     gap: 1.7rem;
 
-    margin: 1rem 2rem;
+    margin: 3rem 2rem 0;
 
     > li {
       display: flex;

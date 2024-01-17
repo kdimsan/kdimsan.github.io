@@ -20,7 +20,7 @@ export const Container = styled.header`
     top: 0;
     left: 0;
 
-    z-index: 1;
+    z-index: 1000;
 
     transition: all 0.3s ease;
   }

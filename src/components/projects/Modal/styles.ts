@@ -7,7 +7,7 @@ export const Container = styled.div`
   left: 0;
   right: 0;
   background-color: rgb(0, 0, 0, 0.6);
-  z-index: 100;
+  z-index: 9999;
 
   .fadeout {
     animation: fade-modal 0.4s;

@@ -42,7 +42,7 @@ export function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [prevScrollPos]);
+  });
 
   return (
     <Container>

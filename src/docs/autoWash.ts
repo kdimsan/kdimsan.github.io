@@ -1,10 +1,7 @@
 import { AppDataProps, AppInfoProps } from "./appsProps";
 
 const autoWashImages: AppInfoProps = {
-  image_src: [
-    "/AutoWashImages/auto-wash.gif",
-    "/AutoWashImages/auto-wash-mobile.gif",
-  ],
+  image_src: ["/AutoWashImages/auto-wash.gif"],
   image_description: ["Desktop", "Mobile"],
   languages: ["React", "TypeScript", "Styled-Components", "Axios"],
 };
