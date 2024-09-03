@@ -29,7 +29,6 @@ const Container = styled.div`
 
       > span {
         font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
-        font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
         letter-spacing: 1px;
         font-weight: 500;
       }

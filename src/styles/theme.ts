@@ -23,9 +23,4 @@ export default {
     FS_6L: "3.2rem",
     FS_7L: "4rem",
   },
-  FONT_FAMILY: {
-    MODERNIST: "Modernist, sans-serif",
-    WILD_WORLD: "Wild-world, sans-serif",
-    NEUTRAL_BOLD: "Neutral-Face-Bold, sans-serif",
-  },
 };

@@ -8,7 +8,6 @@ interface TitleProps {
 
 const TitleContainer = styled.h2<{ fontSize: string }>`
   font-size: ${(props) => props.fontSize};
-  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
   margin: 1rem 0 1.5rem 1rem;
 `;
 

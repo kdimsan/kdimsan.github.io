@@ -18,7 +18,6 @@ const LanguagesContainer = styled.div`
   gap: 6px 1rem;
 
   margin: 1.5rem 0 2rem;
-  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
 
   > div {
     background: ${({ theme }) => theme.COLORS.BG_SKILLS};

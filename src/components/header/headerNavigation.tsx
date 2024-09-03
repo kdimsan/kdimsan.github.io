@@ -21,7 +21,6 @@ const Container = styled.nav`
 
     > li {
       font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
-      font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
       font-weight: 500;
       transition: filter 0.2s ease-in-out;
 

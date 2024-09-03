@@ -6,7 +6,6 @@ const Container = styled.div`
     font-size: ${({ theme }) => theme.FONT_SIZE.FS_XS};
   }
   > h1 {
-    font-family: ${({ theme }) => theme.FONT_FAMILY.WILD_WORLD};
     font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
     white-space: nowrap;
     line-height: 30px;
@@ -27,7 +26,6 @@ const Container = styled.div`
     }
 
     > h2 {
-      font-family: ${({ theme }) => theme.FONT_FAMILY.WILD_WORLD};
       font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
     }
   }

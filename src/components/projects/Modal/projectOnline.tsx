@@ -9,7 +9,6 @@ type ProjectOnlineProps = {
 
 const Paragraph = styled.p`
   font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
-  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
   text-align: justify;
 
   margin: 1rem 0;

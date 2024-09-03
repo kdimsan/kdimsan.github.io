@@ -8,7 +8,6 @@ type ProjectDescriptionProps = {
 const Paragraph = styled.p`
   font-size: ${({ theme }) => theme.FONT_SIZE.FS_M};
   text-align: justify;
-  font-family: ${({ theme }) => theme.FONT_FAMILY.MODERNIST};
 
   margin: 1rem 0;
 
